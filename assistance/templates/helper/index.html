@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}
+Последние обновления на сайте
+{% endblock %}
+{% block content %}
+{{ text.month }}
+    {% for table in text %}
+
+        {{ table.last_name }}
+        {{ table.data.day }}
+    {% endfor %}
+{% endblock %}
